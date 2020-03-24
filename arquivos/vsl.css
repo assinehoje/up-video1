@@ -1,0 +1,943 @@
+/* RESET */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+b {
+  font-weight: 900;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: 'Muli', sans-serif;
+  line-height: 1.3;
+  color: #323232;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a:hover{text-decoration: none;}
+
+/*OBRIGADO*/
+.obrigado{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+.obrigado img{
+  width: 12%;
+  margin-bottom: 10px;
+}
+.obrigado p{
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 18px;
+}
+/*BARRA FIXA*/
+.barra-fixa {
+  display:none;
+}
+/*HEADER*/
+header {
+  text-align: center;
+  background-color: #ffc20f;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 550px;
+}
+header hgroup{
+  margin-bottom: 20px;
+}
+header h1 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'Muli', sans-serif;
+  color: #272005;
+  line-height: 1;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+header h2{
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Muli', sans-serif;
+  color: #292929;
+}
+iframe {
+  display: block;
+  width: 100%;
+  margin: auto;
+  border: 20px solid #fff;
+}
+header .video{
+  position: relative;
+  z-index: 10;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 0px;
+}
+header .video:before{
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  top: 74%;
+  left: 0%;
+  z-index: -2;
+  background-color: rgba(18, 43, 204, 0.00);
+  box-shadow: 110px 31px 26px -1px #818181;
+  transform: rotate(-9deg);
+  -webkit-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);}
+header .video:after{
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  top: 74%;
+  left: 30%;
+  z-index: -2;
+  background-color: rgba(216, 0, 0, 0.00);
+  box-shadow: 123px -6px 26px -1px #818181;
+  transform: rotate(9deg);
+  -webkit-transform: rotate(9deg);
+  -ms-transform: rotate(9deg);}
+header button{
+  margin-top: 40px;
+}
+header a:hover{text-decoration: none;}
+
+/*NÃO IGNORE*/
+.nao-ignore{
+  background-color: #fff;
+  margin-top: 350px;
+  padding-top: 60px;
+  text-align: center;
+}
+.nao-ignore .lista{
+  display: block;
+  clear: both;
+}
+.nao-ignore h1{
+  font-size: 34px;
+  font-weight: 900;
+  color: #f95e3e;
+}
+.nao-ignore h1::before{
+  content: '';
+  width: 25%;
+  height: 4px;
+  margin: auto;
+  display: block;
+  margin-bottom: 15px;
+  background-color: #f95e3e;
+}
+.nao-ignore h2{
+  font-size: 34px;
+  font-weight: 400;
+  color: #272005;
+  line-height: 1;
+}
+.nao-ignore .lista img{
+  width: 100%;
+}
+.nao-ignore .lista .texto-um p{
+  text-align: left;
+  font-size: 28px;
+  font-weight: 400;
+}
+.nao-ignore .lista .texto-um{
+  padding-top: 7%;
+}
+.nao-ignore .mobile{display: none;}
+.nao-ignore .importante img{
+  margin-bottom: -5px;
+}
+.nao-ignore .importante p{
+  font-size: 31px;
+  font-weight: 400;
+  color: #513659;
+  text-align: left;
+}
+.nao-ignore .importante .texto-dois{
+  padding-top: 15%;
+}
+
+/*SOLUÇÃO*/
+.solucao{
+  background-color: #513659;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  color: #fff;
+}
+.solucao h1{
+  font-size: 34px;
+  font-weight: 900;
+  margin-bottom: 70px;
+}
+.solucao h1::after{
+  content: '';
+  width: 25%;
+  height: 4px;
+  margin: auto;
+  display: block;
+  margin-top: 15px;
+  background-color: #fff;
+}
+.solucao .lista{
+  display: block;
+  clear: both;
+}
+.solucao img{
+  width: 70%;
+  margin-bottom: 20px;
+}
+.solucao h2{
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+/*COMO FUNCIONA*/
+.como-funciona{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.como-funciona hgroup{
+  margin-bottom: 50px;
+}
+.como-funciona h1{
+  font-size: 34px;
+  font-weight: 900;
+  color: #f95e3e;
+}
+.como-funciona h1::before{
+  content: '';
+  width: 25%;
+  height: 4px;
+  margin: auto;
+  display: block;
+  margin-bottom: 15px;
+  background-color: #f95e3e;
+}
+.como-funciona h2{
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 20px;
+  text-transform: none;
+}
+.como-funciona iframe{
+  width: 75%;
+  border: 15px solid #ffc20f;
+}
+.como-funciona p{
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.como-funciona ul{
+  text-align: left;
+}
+.como-funciona ul li{
+  background-color: #f95e3e;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: none;
+  color: #fff;
+}
+.como-funciona .numberCircle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    border: 4px solid #fff;
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+}
+
+/*QUANTO TEMPO*/
+.quanto-tempo{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.quanto-tempo h1{
+  font-size: 34px;
+  font-weight: 900;
+  color: #f95e3e;
+  margin-bottom: 20px;
+}
+.quanto-tempo p{
+  font-size: 22px;
+}
+
+/*DEPOIMENTOS*/
+.depoimentos{
+  background-color: #ffc20f;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.depoimentos .lista{
+  display: block;
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.depoimentos h1{
+  text-align: center;
+  font-size: 62px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+.depoimentos .contas img{
+  width: 100%;
+}
+.depoimentos .dados-conta{
+  padding-top: 1%;
+}
+.depoimentos .dados-conta h2{
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: none;
+}
+.depoimentos .dados-conta h3{
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: none;
+}
+.depoimentos .dados-conta h4{
+  background-color: #f95e3e;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: none;
+  color: #fff;
+  width: 60%;
+  text-align: center;
+}
+.depoimentos .dados-conta .autor{
+  margin-top: 30px;
+}
+.depoimentos .dados-conta .autor img{
+  float: left;
+  margin-right: 20px;
+}
+.depoimentos .dados-conta .autor p{
+  padding-top: 6%;
+}
+.depoimentos iframe{
+  width: 75%;
+  margin-bottom: 60px;
+  border: 15px solid #fff;
+}
+.depoimentos .botao{
+  text-align: center;
+  margin-top: 10px;
+}
+.depoimentos .botao h5{
+  font-size: 25px;
+  font-weight: 900;
+}
+.depoimentos .conta-dois-mobile{
+  display: none;
+}
+
+/*CINCO RAZÕES*/
+.cinco-razoes{
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.cinco-razoes hgroup{
+  margin-bottom: 80px;
+}
+.cinco-razoes h1{
+  text-align: center;
+  font-size: 100px;
+  font-weight: 900;
+  color: #513659;
+  line-height: 1;
+}
+.cinco-razoes h2{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: none;
+}
+.cinco-razoes img{
+  width: 100%;
+}
+.cinco-razoes h3{
+  font-size: 23px;
+  font-weight: 900;
+  color: #513659;
+}
+.cinco-razoes p{
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/*CONTADOR*/
+.contador{
+  text-align: center;
+  background-color: #f95e3e;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  color: #fff;
+}
+.contador h1{
+  font-size: 60px;
+  font-weight: 400;
+}
+.contador h2{
+  font-size: 82px;
+  font-weight: 900;
+  width: 40%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  background-color: #ffc20f;
+  color: #f95e3e;
+}
+.contador p{
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/*PRODUTOS*/
+.produtos{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.produtos hgroup{
+  text-align: center;
+  margin-bottom: 60px;
+}
+.produtos h1{
+  font-size: 44px;
+  font-weight: 900;
+  color: #513659;
+}
+.produtos h1 i{
+  font-size: 60px;
+}
+.produtos h2{
+  font-size: 27px;
+  font-weight: 300;
+  color: #513659;
+  text-transform: none;
+}
+.produtos .kit{
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  width: 30%;
+  margin: 0 0 0 30px;
+  padding: 40px 20px;
+  text-align: center;
+}
+.produtos .kit-principal{
+  border: 7px solid #73b532;
+  margin-top: -15px;
+}
+.produtos .kit hgroup{
+  text-align: center;
+  margin-bottom: 0px;
+}
+.produtos .kit h1{
+  font-size: 35px;
+  font-weight: 900;
+  color: #323232;
+}
+.produtos .kit h2{
+  font-size: 22px;
+  font-weight: 300;
+  color: #323232;
+}
+.produtos .kit h6{
+  font-size: 22px;
+  font-weight: 900;
+  color: #323232;
+  background-color: #ffc20f;
+}
+.produtos .kit .desconto{
+  font-size: 22px!important;
+  font-weight: 400;
+  color: #513659;
+  text-transform: none!important;
+}
+.produtos .kit .cartao{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 90%;
+}
+.produtos .kit h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+.produtos .kit h4{
+  font-size: 50px;
+  font-weight: 900;
+}
+.produtos .kit h4 span{
+  font-size: 25px;
+  font-weight: 600;
+  margin-right: 5px;
+  text-transform: none;
+}
+.produtos .kit h5{
+  font-size: 19px;
+  font-weight: 300;
+  text-transform: none;
+}
+/*BOTÃO*/
+.produtos .kit button{
+  background-color: #73b532;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+.produtos .kit button:hover{
+  background-color: #4e8815;
+  -webkit-transition: 0.3s ease-in; // navegadores webkit, como Safari e Chrome
+  -moz-transition: 0.3s ease-in; // Firefox
+  -o-transition: 0.3s ease-in; // Opera
+}
+.produtos .kit button:focus{
+  background-color: #73b532;
+}
+.produtos .kit .bandeiras{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.produtos .kit img{
+  width: 87%;
+}
+
+/*GARANTIA*/
+.garantia{
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.garantia h1{
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 1;
+  color: #513659;
+  margin-top: 5.5%;
+}
+.garantia h2{
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 1;
+  color: #513659;
+}
+.garantia h3{
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 1;
+  background-color: #f95e3e;
+  padding: 15px;
+  width: 80%;
+  margin: auto;
+  color: #fff;
+}
+.garantia p{
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+/*PERGUNTAS FREQUENTES*/
+.perguntas-frequentes{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #513659;
+}
+.perguntas-frequentes h1{
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* COLLAPSE */
+#collapse{
+    padding-bottom: 30px;
+}
+#collapse .panel-default>.panel-heading{
+    background-color: #513659;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-family: Montserrat;
+    font-weight: 700;
+    cursor: pointer;
+    border: 3px;
+}
+#collapse .panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 5px;
+    border-width: 2px;
+    margin-bottom: 20px;
+}
+#collapse .panel-title{
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#collapse .panel-title i {
+    float: right;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: -6px;
+    color: #fff;
+}
+#collapse .panel-body{
+    background-color: #513659;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Muli', sans-serif;
+    line-height: 1.3;
+    color: #fff;
+}
+.panel-default {
+    border-color: #fff;
+}
+
+/*FOOTER*/
+footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ebebeb;
+  text-align: left;
+}
+footer p{
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Muli', sans-serif;
+}
+
+/*COPYRIGHT*/
+.copyright{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Muli', sans-serif;
+}
+.copyright ul{
+  float: right;
+}
+.copyright ul li{
+  display: inline-block;
+  margin-left: 25px;
+}
+.copyright a{
+  color: #3b3b3b;
+}
+
+/*BOTÃO*/
+button{
+  background-color: #73b532;
+  color: #fff;
+  font-size: 35px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
+  border: none;
+  padding: 25px 60px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+button:hover{
+  background-color: #4e8815;
+  -webkit-transition: 0.3s ease-in; // navegadores webkit, como Safari e Chrome
+  -moz-transition: 0.3s ease-in; // Firefox
+  -o-transition: 0.3s ease-in; // Opera
+}
+button:focus{
+  background-color: #73b532;
+}
+
+/* MOBILE / TABLET */
+@media (max-width:1024px) {
+  /*NÃO IGNORE*/
+  .nao-ignore .lista .texto{padding-top: 5%;}
+  .nao-ignore .lista .texto-um {padding-top: 1%;}
+  .nao-ignore .importante p {font-size: 40px;}
+  /*DEPOIMENTOS*/
+  .depoimentos {padding-bottom: 0px;}
+  .depoimentos .dados-conta {padding-top: 0%;}
+  .depoimentos .dados-conta h4{width: 100%;}
+  /*CONTADOR*/
+  .contador {padding-bottom: 120px;}
+  /*PRODUTOS*/
+  .produtos .kit h2 {font-size: 20px;}
+  .produtos .kit h4 {font-size: 37px;}
+  .produtos .kit button {font-size: 18px;}
+  /*GARANTIA*/
+  .garantia h1 {font-size: 75px;}
+  .garantia h2 {font-size: 82px;}
+  .garantia h3 {font-size: 32px;}
+}
+@media (max-width:980px) {
+  /*HEADER*/
+  header{height: 700px;}
+  header .video{width: 100%;}
+  /*NAO IGNORE*/
+  .nao-ignore .lista p {font-size: 20px;}
+  .nao-ignore .importante p {font-size: 32px;}
+  /*SOLUÇÃO*/
+  .solucao img{width: 100%;}
+  /*CONTADOR*/
+  .contador h1 {font-size: 50px;}
+  .contador h2 {width: 80%;}
+  /*PRODUTOS*/
+  .produtos .kit {width: 32%;margin: 0 0 0 10px;}
+  .produtos .kit h1 {Font-size: 26px;}
+  .produtos .kit h2 {font-size: 14px;}
+  .produtos .kit h3 {font-size: 20px;}
+  .produtos .kit h4 {font-size: 30px;}
+  .produtos .kit button {font-size: 16px;}
+  /*GARANTIA*/
+  .garantia img{width: 100%;}
+  .garantia h3 {font-size: 30px; width: 100%;}
+
+}
+@media (max-width:770px) {
+  /*PRODUTOS*/
+  .produtos .kit {width: 31%;margin: 0 0 0 10px;}
+  .produtos .kit h4 {font-size: 25px;}
+  /*GARANTIA*/
+  .garantia h1 {font-size: 60px;}
+  .garantia h2 {font-size: 65px;}
+  /*COPYRIGHT*/
+  .copyright{text-align: center;}
+  .copyright ul{margin-top: 20px; float: none;}
+  .copyright ul li{display: block;margin-left: 0px; margin-bottom: 5px;}
+}
+@media (max-width:740px) {
+  /*OBRIGADO*/
+  .obrigado img{width: 20%;  }
+  .obrigado p{padding-left: 0%; padding-right: 0%; }
+  /*WHATSAPP*/
+  .btn-chat{display: none;}
+  /*BARRA FIXA*/
+  .barra-fixa {
+    position:fixed;
+    display:none;
+    z-index:999;
+    background-color: #0d9f16;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .barra-fixa a{
+    font-size: 16px;
+    font-weight: 400px;
+    color: #fff;
+    font-weight: 900;
+  }
+  /*HEADER*/
+  header{height: 600px;}
+  header h1 {font-size: 32px;}
+  /*NÃO IGNORE*/
+  .nao-ignore .lista{padding-right: 0px;}
+  .nao-ignore .lista .texto, .nao-ignore .lista .texto-um{padding-top: 1%; padding-bottom: 5%;}
+  .nao-ignore .lista p {font-size: 28px; text-align: center;}
+  .nao-ignore .importante{display: none;}
+  .nao-ignore .mobile{display: block;}
+  .nao-ignore .lista .texto-um p{text-align: center;}
+  .nao-ignore .lista img{width: 60%;}
+  .nao-ignore .importante .texto-dois{padding-top: 20px;}
+  .nao-ignore .importante p{font-size: 38px;}
+  .nao-ignore .lista img {width: 100%;}
+  .nao-ignore .mobile img {width: 75%;}
+  /*SOLUÇÃO*/
+  .solucao h1 {font-size: 28px;}
+  .solucao img{width: 40%;}
+  .solucao p{margin-bottom: 20px;}
+  /*COMO FUNCIONA*/
+  .como-funciona h1 {font-size: 30px;}
+  /*DEPOIMENTOS*/
+  .depoimentos{text-align: center;}
+  .depoimentos .dados-conta{margin-top: 20px; text-align: center;}
+  .depoimentos .contas img{width: 80%;}
+  .depoimentos .dados-conta .autor img{float: none;margin-right: 0px;}
+  .depoimentos .dados-conta .autor p{padding-top: 0;}
+  .depoimentos .conta-dois{display: none;}
+  .depoimentos .conta-dois-mobile{display: block;}
+  .depoimentos .videos{margin-bottom: 0px;}
+  .depoimentos iframe{margin-bottom: 20px;}
+  /*CINCO SOLUÇÕES*/
+  .cinco-razoes{text-align: center;}
+  .cinco-razoes hgroup{margin-bottom: 40px;}
+  .cinco-razoes img{width: 75%; margin-bottom: 40px;}
+  /*PRODUTOS*/
+  .produtos .kit h1 {font-size: 22px;}
+  .produtos .kit button {font-size: 14px;}
+  /*GARANTIA*/
+  .garantia img {width: 45%;}
+  .garantia h3 {width: 70%;}
+}
+@media (max-width:680px) {
+  /*HEADER*/
+  header br{display: none;}
+  header button { margin-top: 50px;}
+  /*PRODUTOS*/
+  .produtos .kit {width: 100%; margin-left: 0px; margin-bottom: 20px;}
+  .produtos .kit h1 {font-size: 45px;}
+  .produtos .kit h2 {font-size: 20px;}
+  .produtos .kit .cartao {width: 60%;}
+  .produtos .kit h3 {font-size: 25px;}
+  .produtos .kit h4 {font-size: 50px;}
+  .produtos .kit button {font-size: 25px;}
+  .produtos .kit img {width: 50%;}
+}
+@media (max-width:500px) {
+  /*OBRIGADO*/
+  .obrigado img{width: 35%;}
+  /*HEADER*/
+  header {height: 750px;}
+  header .video:before, header .video:after{display: none;}
+  iframe {border: 10px solid #fff;}
+  /*NÃO IGNORE*/
+  .nao-ignore .lista img{width: 100%;}
+  /*SOLUÇÃO*/
+  .solucao img{width: 80%;}
+  /*COMO FUNCIONA*/
+  .como-funciona iframe {border: 10px solid #ffc20f; width: 100%;}
+  .como-funciona .numberCircle {margin-bottom: 60px;}
+  /*DEPOIMENTOS*/
+  .depoimentos h1 {font-size: 40px;}
+  .depoimentos .contas img {width: 100%;}
+  .depoimentos iframe{border: 10px solid #fff; width: 100%;}
+  /*5 RAZÕES*/
+  .cinco-razoes h1 {font-size: 60px;}
+  /*CONTADOR*/
+  .contador h2 {width: 100%;}
+  /*PRODUTOS*/
+  .produtos h1{line-height: 1;}
+  .produtos h1 i {display: block;}
+  /*GARANTIA*/
+  .garantia img {width: 80%;}
+  .garantia h1 {font-size: 50px;}
+  .garantia h2 {font-size: 55px;}
+  .garantia h3 {font-size: 20px; width: 100%;}
+  /*BOTÃO*/
+  button{width: 100%;}
+}
+@media (max-width:380px) {
+  /*HEADER*/
+  header {height: 750px;}
+  header img{width: 100%;}
+  /*NÃO IGNORE*/
+  .nao-ignore .importante p {font-size: 30px;}
+  /*COMO FUNCIONA*/
+  .como-funciona .numberCircle {margin-bottom: 60px;}
+  /*DEPOIMENTOS*/
+  .depoimentos h1 {font-size: 40px;}
+  .depoimentos .contas img {width: 100%;}
+  .depoimentos .botao img{width: 100%;}
+  /*5 RAZÕES*/
+  .cinco-razoes h1 {font-size: 50px;}
+  .cinco-razoes h2 {font-size: 30px; line-height: 1;}
+  .cinco-razoes img {width: 100%;}
+  /*CONTADOR*/
+  .contador h1 {font-size: 40px; line-height: 1;}
+  .contador h2 {font-size: 60px;}
+  /*PRODUTOS*/
+  .produtos .kit h1 {font-size: 38px;}
+  .produtos h1 i {display: block;}
+  /*GARANTIA*/
+  .garantia h1 {font-size: 45px;}
+  .garantia h2 {font-size: 50px;}
+  .garantia h3 {font-size: 18px;}
+  /*PERGUNTAS FREQUENTES*/
+  #collapse .panel-title i {margin-top: -25px;}
+  /*BOTÃO*/
+  button {font-size: 25px;padding: 25px 0px;}
+}
+@media (max-width:320px) {
+  /*HEADER*/
+  header {height: 800px;}
+  /*DEPOIMENTOS*/
+  .depoimentos h1 {font-size: 30px;}
+  .depoimentos .lista{padding-left: 0px; padding-right: 0px;}
+  /*5 RAZÕES*/
+  .cinco-razoes h1 {font-size: 50px;}
+  .cinco-razoes h2 {font-size: 30px; line-height: 1;}
+  .cinco-razoes img {width: 100%;}
+  /*CONTADOR*/
+  .contador h1 {font-size: 40px; line-height: 1;}
+  .contador h2 {font-size: 60px;}
+  /*PRODUTOS*/
+  .produtos .kit h1 {font-size: 30px;}
+  .produtos .kit h4 {font-size: 40px;}
+  .produtos .kit button {font-size: 20px;}
+  /*GARANTIA*/
+  .garantia h1 {font-size: 40px;}
+  .garantia h2 {font-size: 45px;}
+  .garantia h3 {font-size: 18px;}
+}
